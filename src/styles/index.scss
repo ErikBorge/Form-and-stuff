@@ -1,0 +1,22 @@
+@import './_variables';
+
+@import './app';
+
+//components
+@import './form';
+
+//urls
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200;400;600;800&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Epilogue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Epilogue', sans-serif;
+}

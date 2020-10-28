@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+
+import Form from './Form';
 
 function App() {
+
+  useEffect(() => {
+
+  })
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello dis is Erik thank you.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app__popup">
+        <div className="app__heading">
+          <h1>Hello, person!</h1>
+          <h3>Vennligst gi fra deg din personinformasjon.</h3>
+        </div>
+        <Form />
+      </div>
     </div>
   );
 }

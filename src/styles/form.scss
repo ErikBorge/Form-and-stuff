@@ -1,0 +1,105 @@
+.form{
+  width: 100%;
+  &__field{
+    // display: ;
+  position: relative;
+    margin: 20px 0;
+  }
+
+  &__button{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  &__error{
+    font-size: 10px;
+    color: red;
+  }
+
+  &__errorBackground{
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 10;
+  }
+
+  &__errorMsg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 15px;
+    background-color: $beige;
+
+  }
+
+  &__location{
+    position: absolute;
+    right: 20px;
+    top: 49%;
+    // transform: translateY(-50%);
+    // font-weight: 600;
+    font-size: 20px;
+    color: rgba(0,0,0,0.6)
+  }
+
+  // form{
+  //   width: 100%;
+  // }
+
+  input{
+    // font-family: 'SpaceGrotesk';
+    // width: 100%;
+    font-size: 20px;
+    padding: 15px 20px;
+    width: 100%;
+    background-color: rgba(245,245,245,1);
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,1);
+    // color: #FFF;
+    color: inherit;
+
+  }
+  input:focus{
+    outline: none;
+    // border: 2px solid $pink;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.47);
+  }
+
+  label{
+    display: block;
+    transform: translate(10px, 50%);
+    padding-left: 10px;
+    width: 120px;
+    background-color: rgba(245,245,245,1);
+  }
+
+  button{
+    padding: 20px 40px;
+    background-color: $green;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: background-color, box-shadow 0.2s ease;
+    &:hover, &:focus{
+      background-color: rgba(2,191,170,1);
+      // color: white;
+      cursor: pointer;
+      box-shadow: 0 0 5px 0 rgba(0,0,0,0.47);
+    }
+
+  }
+
+}

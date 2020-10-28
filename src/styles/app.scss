@@ -1,0 +1,38 @@
+.app {
+  // text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $pink;
+
+  &__popup{
+    // flex-wrap: wrap;
+    background-color: rgba(245,245,245,1);
+    width: 60%;
+    max-width: 850px;
+    // height: 50%;
+
+    margin: 0 auto;
+    padding: 30px 10%;
+
+    border-radius: 20px;
+    box-shadow: 4px 6px 14px -1px rgba(0,0,0,0.47);
+
+
+    @media (max-width: 768px){
+      width: 90%;
+      // padding: 30px 30px;
+    }
+  }
+
+  &__heading{
+    h1{
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    h3{
+      font-weight: 400;
+    }
+    margin-bottom: 40px;
+  }
+
+}
