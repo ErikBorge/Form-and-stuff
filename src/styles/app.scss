@@ -1,8 +1,6 @@
 .app {
-  // text-align: center;
   width: 100vw;
-  min-height: 100vh;
-  background-color: $pink;
+  // min-height: 100vh;
 
   &__popup{
     // flex-wrap: wrap;
@@ -11,17 +9,19 @@
     max-width: 850px;
     // height: 50%;
 
-    margin: 0 auto;
-    padding: 30px 10%;
+    margin: 20px auto;
+    padding: 20px 10%;
 
     border-radius: 20px;
     box-shadow: 4px 6px 14px -1px rgba(0,0,0,0.47);
-
 
     @media (max-width: 768px){
       width: 90%;
       // padding: 30px 30px;
     }
+
+
+    animation: swipeup 0.8s ease;
   }
 
   &__heading{
@@ -32,7 +32,13 @@
     h3{
       font-weight: 400;
     }
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
+
+}
+
+@keyframes swipeup {
+  0%{ margin-top: 150%; }
+  100% { margin-top: 20px; }
 
 }

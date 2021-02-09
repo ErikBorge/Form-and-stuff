@@ -94,8 +94,9 @@ function Form() {
 
   return (
     <div className="form">
-      { showErrorMsg &&
+      { showErrorMsg &&<>
         <div className="form__errorBackground">
+        </div>
           <div className="form__errorMsg">
             Skjemaet er ikke fylt ut riktig. <br/>Følg feilmeldingene.
             <div className="form__button" style={{marginTop: '20px'}}>
@@ -107,7 +108,7 @@ function Form() {
               </button>
             </div>
           </div>
-        </div>
+        </>
       }
       <form
         id="info-form"
